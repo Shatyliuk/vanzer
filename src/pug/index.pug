@@ -1,0 +1,227 @@
+extends /layout/main
+block variables
+    - var title = 'Vanzer'
+block content
+    header.header
+        .container
+            .header__container
+                .logo
+                .menu
+                    span
+                    span
+                    span
+                .fullscreenNavigation
+                    nav.fullscreenNavigation__nav
+                        ul
+                            li
+                                a(href='#homeSection') Home
+                            li
+                                a(href='#aboutSection') About us
+                            li
+                                a(href='#servicesSection') Services
+                            li
+                                a(href='#portfolioSection') Portfolio
+                            li
+                                a(href='#blogSection') Blog
+                            li
+                                a(href='#contactSection') Contact
+    main(id="main").main
+        nav.navigation
+            ul.pagination
+                li.active
+                    span.pagination__number 01
+                    a(href='#homeSection').pagination__info
+                        span.circle
+                        span.pagination__name Home
+                li.black
+                    span.pagination__number 02
+                    a(href='#aboutSection').pagination__info
+                        span.circle
+                        span.pagination__name About us
+                li
+                    span.pagination__number 03
+                    a(href='#servicesSection').pagination__info
+                        span.circle
+                        span.pagination__name Services
+                li
+                    span.pagination__number 04
+                    a(href='#portfolioSection').pagination__info
+                        span.circle
+                        span.pagination__name Portfolio
+                li.black
+                    span.pagination__number 05
+                    a(href='#blogSection').pagination__info
+                        span.circle
+                        span.pagination__name Blog
+                li
+                    span.pagination__number 06
+                    a(href='#contactSection').pagination__info
+                        span.circle
+                        span.pagination__name Contact
+        section(id="homeSection").section.homeSection.sectionOverlay
+            .container
+                .homeSection__wrapper
+                    .homeSection__info
+                        h1 VANZER
+                        p FREE CREATIVE PSD TEMPLATE FOR YOU
+                        .homeSection__link
+                            a(href='#') read more
+                                i.fas.fa-arrow-right
+                    .homeSection__letter
+                        img(src='images/char.png')
+        .socialLinks
+            ul
+                li
+                    a(href='#').socialLinks__fb
+                        i.fab.fa-facebook-f
+                        .socialLinks__line
+                li
+                    a(href='#').socialLinks__tw
+                        i.fab.fa-twitter
+                        .socialLinks__line
+                li
+                    a(href='#').socialLinks__dr
+                        i.fab.fa-dribbble
+                        .socialLinks__line
+                li
+                    a(href='#').socialLinks__be
+                        i.fab.fa-behance
+                        .socialLinks__line
+        section(id="aboutSection").aboutSection.section
+            .container
+                .aboutSection__wrapper
+                    .aboutSection__info
+                        h2 Creative
+                        span studio
+                    .aboutSection__photos
+                        img(src='images/table.png')
+                        img(src='images/cup.png')
+                    .aboutSection__text
+                        p Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum.
+
+        section(id="servicesSection").section.servicesSection.sectionOverlay
+            .sectionBackText
+                p Services
+            .container
+                .servicesSection__wrapper
+                    .sectionHeading
+                        h2 Services
+                    .sectionList
+                        ul
+                            li
+                                a(href='#') industrial design
+                            li
+                                a(href='#') web design
+                            li.active
+                                a(href='#') photography
+                    .sectionInfo__wrapper
+                        .sectionInfo
+                            h3 photography
+                            p Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+
+        section(id="portfolioSection").section.portfolioSection.sectionOverlay
+            .sectionBackText
+                p Portfolio
+            .container
+                .servicesSection__wrapper
+                    .sectionHeading
+                        h2 Portfolio
+                    .portfolioSection__wrapper
+                        .portfolioItem
+                            .portfolioItem__img
+                                img(src='images/portfolio_1.png')
+                            .portfolioItem__hover
+                                h4 Coffe cup
+                                p Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                a(href='#')
+                                    i.fas.fa-link
+                        .portfolioItem
+                            .portfolioItem__img
+                                img(src='images/portfolio_2.png')
+                            .portfolioItem__hover
+                                h4 Coffe cup
+                                p Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                a(href='#')
+                                    i.fas.fa-link
+                        .portfolioItem
+                            .portfolioItem__img
+                                img(src='images/portfolio_3.png')
+                            .portfolioItem__hover
+                                h4 Coffe cup
+                                p Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                a(href='#')
+                                    i.fas.fa-link
+                        .sectionList.sectionList-portfolio
+                            ul
+                                li
+                                    a(href='#') industrial design
+                                li
+                                    a(href='#') web design
+                                li.active
+                                    a(href='#') photography
+        section(id="blogSection").section.blogSection
+            .sectionBackText
+                p Blog
+            .container
+                .blogSection__wrapper.servicesSection__wrapper
+                    .sectionHeading.sectionHeading-black
+                        h2 Recent Blog
+                    .blogSection__content
+                        .blogItem
+                            .blogItem__img
+                                img(src='images/blogImg.png')
+                            .blogSectionText.blogSectionText-line
+                                a(href='#').blogSectionText__link Ridiculus Fringilla Vulputate
+                                .blogSectionText__links
+                                    a(href='#') Photography
+                                    a(href='#') Today
+                                    a(href='#') by Crophos
+                        .blogSection__info
+                            .blogSectionText
+                                a(href='#').blogSectionText__link Quam Sit Ridiculus
+                                .blogSectionText__links
+                                    a(href='#') Photography
+                                    a(href='#') Today
+                                    a(href='#') by Crophos
+                            .blogSectionText
+                                a(href='#').blogSectionText__link Ligula Mattis Tellus
+                                .blogSectionText__links
+                                    a(href='#') Photography
+                                    a(href='#') Today
+                                    a(href='#') by Crophos
+        section(id="contactSection").section.contactSection.sectionOverlay
+            .sectionBackText
+                p Contact
+            .container
+                .contactSection__wrapper
+                    .contactSection__container
+                        .sectionHeading
+                            h2 Contact
+                        .contacts
+                            .contacts__info
+                                i.far.fa-envelope
+                                .contacts__mail
+                                    span Email:
+                                    a(href='#') mail@mail.com
+                            .contacts__info
+                                i.fas.fa-phone
+                                .contacts__mail
+                                    span Phone
+                                    a(href='#') (123) 456-52-32
+                            .contacts__info
+                                i.fas.fa-map-marker-alt
+                                .contacts__mail
+                                    span Address
+                                    p Crophos Inc. 76 Camptown Road Chicago, IL 60710 United States
+                    .contactSection__container
+                        .contactsForm
+                            form
+                                .contactsForm__wrapper
+                                    input(type='text' placeholder='Your name')
+                                    input(type='text' placeholder='Your email')
+                                .contactsForm__wrapper
+                                    input(type='text' placeholder='Your topic')
+                                .contactsForm__wrapper
+                                    textarea(placeholder='Message')
+                                button Send Message
+
